@@ -258,3 +258,101 @@ kbd {
 #restart-btn:hover {
   background: var(--accent-hover);
 }
+
+/* ---- High-score overlay additions ---- */
+#name-input-section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#name-input-section.hidden {
+  display: none;
+}
+
+#player-name {
+  background: var(--kbd-bg);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 13px;
+  padding: 6px 10px;
+  outline: none;
+  width: 140px;
+  transition: border-color 0.15s;
+}
+
+#player-name:focus {
+  border-color: var(--accent);
+}
+
+#save-score-btn {
+  background: var(--accent);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+#save-score-btn:hover {
+  background: var(--accent-hover);
+}
+
+#highscores-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+#highscores-table {
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+  min-width: 220px;
+}
+
+#highscores-table th {
+  color: var(--label-color);
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--board-border);
+}
+
+#highscores-table td {
+  padding: 4px 10px;
+  color: var(--text);
+  text-align: center;
+}
+
+#highscores-table tbody tr.new-entry td {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+#stats-line {
+  font-size: 11px;
+  color: var(--label-color);
+  letter-spacing: 1px;
+}
+
+#reset-records-btn {
+  background: transparent;
+  color: var(--label-color);
+  border: 1px solid var(--kbd-border);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+#reset-records-btn:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
